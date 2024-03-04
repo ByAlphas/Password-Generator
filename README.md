@@ -1,2 +1,13 @@
-# Password-Generator
-Şifre Oluşturmakta Güçlük Çekiyorsanız, Güvenilir Bir Şifre Oluşturucu Arıyorsanız, 4 Farklı Özelleştirme Seçeneği İle Hesaplarınızı Daha Güvenli Hale Getirmek İstiyorsanız Altyapımızı Kullanabilirsiniz. İyi Kullanımlar Dilerim...
+![](https://i.imgur.com/PXq52vP.png)
+
+## Sürüm Desteği
+
+- [x] Mevcut Sürüm V1.1'dir. V1.0 Paylaşılmayacaktır.
+- [x] Güncelleme arada sırada gelebilir. 
+
+
+### Altyapıyı Nasıl Kullanacağım?
+
+- [NOT] Altyapı Hakkında Bilginiz Yoksa Kodları Ellemeyin.
+
+- [START] alpha.html > Çift Sol Click > İyi Kullanımlar :)
