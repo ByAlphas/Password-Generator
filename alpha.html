@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Şifre Oluşturucu A.Ş</title>
+    <link rel="stylesheet" href="styles-alpha.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Alpha Şifre Oluşturucu A.Ş</h1>
+        <div class="controls">
+            <div class="control">
+                <input type="checkbox" id="lowercase" checked>
+                <label for="lowercase"> Küçük Harfler </label> <!-- Küçük Harf -->
+            </div>
+            <div class="control">
+                <input type="checkbox" id="uppercase" checked>
+                <label for="uppercase"> Büyük Harfler </label> <!-- Büyük Harf -->
+            </div>
+            <div class="control">
+                <input type="checkbox" id="numbers" checked>
+                <label for="numbers"> Sayılar </label> <!-- Sayılar -->
+            </div>
+            <div class="control">
+                <input type="checkbox" id="specialChars" checked>
+                <label for="specialChars"> Özel Karakterler </label> <!-- Özel Karakterler -->
+            </div>
+        </div>
+        <div class="slider-container">
+            <input type="range" id="length" min="1" max="100" value="8" oninput="updateLength(this.value)">
+            <span id="length-display">8</span>
+        </div>
+        <button onclick="generatePassword()">Oluştur</button>
+        <input type="text" id="password" placeholder="Şifre" readonly>
+    </div>
+    <script src="alpha.js"></script>
+</body>
+</html>
