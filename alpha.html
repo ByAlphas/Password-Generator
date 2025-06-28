@@ -3,37 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Şifre Oluşturucu A.Ş</title>
-    <link rel="stylesheet" href="styles-alpha.css"> <!-- Siyah Tema Benim Favorim :D -->
+    <title>Alpha Password Generator</title>
+    <link rel="stylesheet" href="styles-alpha.css"> <!-- Black Theme is My Favorite :D -->
 </head>
 <body>
     <div class="container">
-        <h1>Alpha Şifre Oluşturucu A.Ş</h1>
+        <h1>Password Generator</h1>
         <div class="controls">
             <div class="control">
                 <input type="checkbox" id="lowercase" checked>
-                <label for="lowercase"> Küçük Harfler </label> <!-- Küçük Harf -->
+                <label for="lowercase"> Lowercase Letters </label> <!-- Lowercase Letters -->
             </div>
             <div class="control">
                 <input type="checkbox" id="uppercase" checked>
-                <label for="uppercase"> Büyük Harfler </label> <!-- Büyük Harf -->
+                <label for="uppercase"> Uppercase Letters </label> <!-- Uppercase Letters -->
             </div>
             <div class="control">
                 <input type="checkbox" id="numbers" checked>
-                <label for="numbers"> Sayılar </label> <!-- Sayılar -->
+                <label for="numbers"> Numbers </label> <!-- Numbers -->
             </div>
             <div class="control">
                 <input type="checkbox" id="specialChars" checked>
-                <label for="specialChars"> Özel Karakterler </label> <!-- Özel Karakterler -->
+                <label for="specialChars"> Special Characters </label> <!-- Special Characters -->
             </div>
         </div>
         <div class="slider-container">
             <input type="range" id="length" min="1" max="100" value="8" oninput="updateLength(this.value)">
             <span id="length-display">8</span>
         </div>
-        <button onclick="generatePassword()">Oluştur</button>
-        <input type="text" id="password" placeholder="Şifre" readonly>
+        <button onclick="generatePassword()">Generate</button>
+        <input type="text" id="password" placeholder="Password" readonly>
     </div>
+
+    <footer style="text-align:center; font-size: 0.85em; color: #888; margin-top: 40px;">
+    © 2025 Alpha Password Generator - Created by Alpha
+    </footer>
+
     <script src="alpha.js"></script>
 </body>
 </html>
