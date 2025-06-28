@@ -20,7 +20,7 @@ function generatePassword() {
     }
 
     if (charset === "") {
-        alert("En az bir karakter kümesi seçilmelidir.");
+        alert("Please select at least one character set.");
         return;
     }
 
